@@ -21,7 +21,7 @@
 
 addon.name      = 'watchdog';
 addon.author    = 'atom0s';
-addon.version   = '1.1';
+addon.version   = '1.2';
 addon.desc      = 'Enables widescan tracking [nearly] anything with a command.';
 addon.link      = 'https://ashitaxi.com/';
 
@@ -81,12 +81,14 @@ local function get_zone_ids()
         return 0, 0;
     end
 
-    local pointer = ashita.memory.read_uint32(watchdog.pointers.zone);
+    local offset1 = ashita.memory.read_uint32(watchdog.pointers.zone + 0x08);
+    local offset2 = ashita.memory.read_uint32(watchdog.pointers.zone + 0x0F);
+    local pointer = ashita.memory.read_uint32(watchdog.pointers.zone + 0x01);
     if (pointer == 0) then return 0, 0; end
-    pointer = ashita.memory.read_uint32(pointer + 0x04);
+    pointer = ashita.memory.read_uint32(pointer);
     if (pointer == 0) then return 0, 0; end
 
-    return ashita.memory.read_uint32(pointer + 0x3C2E0), ashita.memory.read_uint16(pointer + 0x3C2EA);
+    return ashita.memory.read_uint16(pointer + offset2), ashita.memory.read_uint16(pointer + offset1);
 end
 
 --[[
@@ -139,7 +141,7 @@ end
 --]]
 ashita.events.register('load', 'load_cb', function ()
     watchdog.pointers.func = ashita.memory.find(0, 0, '66837C240405568BF10F85????????0FBF44240C480F84????????48', 0xD7, 0x00);
-    watchdog.pointers.zone = ashita.memory.find(0, 0, '8B0D????????8B44240425FFFF00003B', 0x02, 0x00);
+    watchdog.pointers.zone = ashita.memory.find(0, 0, 'A1????????668B88????????668B90????????5152E8????????A3', 0x00, 0x00);
 
     if (watchdog.pointers.func == 0 or watchdog.pointers.zone == 0) then
         error(chat.header(addon.name):append(chat.error('Failed to locate required pointer(s); cannot continue!')));
