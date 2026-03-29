@@ -22,12 +22,28 @@
 /load thirdparty
 /load addons
 /load screenshot
+/load minimap
 
 /addon load distance
 /addon load fps
 /addon load move
-/addon load timestamp
 /addon load tparty
+/addon load checker
+/addon load craftmon
+/addon load equipmon
+/addon load macrofix
+/addon load petinfo
+/addon load recast
+/addon load truesight
+/addon load chains
+/addon load find
+/addon load simplelog
+/addon load omen
+/addon load instantchat
+/addon load luashitacast
+/addon load nomount
+/addon load statustimers
+/addon load tCrossBar
 
 ##########################################################################
 #
@@ -67,3 +83,5 @@
 ##########################################################################
 
 /ambient 255 255 255
+/fps 1
+/fps
