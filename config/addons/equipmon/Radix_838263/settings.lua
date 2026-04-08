@@ -21,7 +21,7 @@ settings["slots"]["theme"][1] = 0;
 settings["slots"]["show_ammo_count"][1] = true;
 settings["slots"]["show_bg"][1] = true;
 settings["slots"]["show_encumbrance"][1] = true;
-settings["y"][1] = 700;
+settings["y"][1] = 500;
 settings["background"]["visible"] = true;
 settings["background"]["can_focus"] = false;
 settings["background"]["locked"] = true;
@@ -35,7 +35,7 @@ settings["ammo_font"]["background"]["visible"] = false;
 settings["ammo_font"]["color_outline"] = 4278190080;
 settings["ammo_font"]["draw_flags"] = 48;
 settings["visible"][1] = true;
-settings["x"][1] = 1000;
+settings["x"][1] = 600;
 settings["opacity"][1] = 1;
 
 return settings;

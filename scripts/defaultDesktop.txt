@@ -44,6 +44,7 @@
 /addon load nomount
 /addon load statustimers
 /addon load tCrossBar
+/addon load titlecheck
 
 ##########################################################################
 #
