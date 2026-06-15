@@ -21,7 +21,7 @@
 
 addon.name      = 'activemon';
 addon.author    = 'atom0s';
-addon.version   = '1.0';
+addon.version   = '1.1';
 addon.desc      = 'Displays an image on screen showing if the current client is focused.';
 addon.link      = 'https://ashitaxi.com/';
 
@@ -60,7 +60,7 @@ activemon.img:SetTextureFromFile(('%s/inactive.png'):fmt(addon.path));
 ashita.events.register('d3d_present', 'd3d_present_cb', function ()
     local has_focus         = false;
     local hwnd_focus        = ffi.cast('uint32_t', ffi.C.GetFocus());
-    local hwnd_foreground   = ffi.cast('uint32_t', ffi.C.GetFocus());
+    local hwnd_foreground   = ffi.cast('uint32_t', ffi.C.GetForegroundWindow());
     local hwnd_game         = AshitaCore:GetProperties():GetFinalFantasyHwnd();
     if (hwnd_focus == 0 or hwnd_foreground == 0 or hwnd_game == 0) then
         has_focus = false;
