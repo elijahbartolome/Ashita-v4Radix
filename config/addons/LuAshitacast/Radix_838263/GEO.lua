@@ -3,38 +3,38 @@ gcinclude = gFunc.LoadFile('common\\gcinclude.lua');
 
 local sets = {
     Idle = {
-        Main = 'Idris',
-        Sub = 'Ammurapi Shield',
-        Range = 'Dunna',
-        Head = 'Nyame Helm',
-        Neck = 'Loricate Torque +1',
-        Ear1 = 'Eabani Earring',
-        Ear2 = 'Etiolation Earring',
-        Body = 'Agwu\'s Robe',
-        Hands = 'Nyame Gauntlets',
-        Ring1 = 'Stikini Ring +1',
-        Ring2 = { Name = 'Metamor. Ring +1', AugPath='A' },
-        Back = 'Solemnity Cape',
-        Waist = 'Gishdubar Sash',
-        Legs = 'Agwu\'s Slops',
-        Feet = 'Volte Gaiters',
-    },
-    Idle_Pet = {
-        Main = 'Idris',
+        Main = 'Solstice',
         Sub = 'Genmei Shield',
         Range = 'Dunna',
-        Head = 'Azimuth Hood +2',
+        Head = 'Azimuth Hood +1',
         Neck = 'Loricate Torque +1',
-        Ear1 = 'Ethereal Earring',
+        Ear1 = 'Odnowa Earring',
         Ear2 = 'Etiolation Earring',
-        Body = 'Telchine Chas.',
-        Hands = 'Geo. Mitaines +2',
-        Ring1 = 'Stikini Ring +1',
-        Ring2 = 'Defending Ring',
+        Body = 'Geomancy Tunic +3',
+        Hands = 'Geo. Mitaines +3',
+        Ring1 = 'Gelatinous Ring',--8
+        Ring2 = 'Murky Ring',
         Back = { Name = 'Nantosuelta\'s Cape', Augment = { [1] = 'Eva.+20', [2] = 'Pet: "Regen"+15', [3] = 'Mag. Eva.+20' } },
         Waist = 'Isa Belt',
-        Legs = 'Telchine Braconi',
-        Feet = 'Telchine Pigaches',
+        Legs = 'Agwu\'s Slops',
+        Feet = 'Bagua Sandals +1',
+    },
+    Idle_Pet = {
+        Main = 'Solstice',
+        Sub = 'Genmei Shield',
+        Range = 'Dunna',
+        Head = 'Azimuth Hood +1',
+        Neck = 'Loricate Torque +1',
+        Ear1 = 'Odnowa Earring',
+        Ear2 = 'Etiolation Earring',
+        Body = 'Geomancy Tunic +3',
+        Hands = 'Geo. Mitaines +3',
+        Ring1 = 'Gelatinous Ring',--8
+        Ring2 = 'Murky Ring',
+        Back = { Name = 'Nantosuelta\'s Cape', Augment = { [1] = 'Eva.+20', [2] = 'Pet: "Regen"+15', [3] = 'Mag. Eva.+20' } },
+        Waist = 'Isa Belt',
+        Legs = 'Agwu\'s Slops',
+        Feet = 'Bagua Sandals +1',
     },
     Resting = {},
     Idle_Regen = {
@@ -57,7 +57,7 @@ local sets = {
         Range = 'Dunna',
         Head = 'Bagua Galero +1',
         Body = 'Agwu\'s Robe',
-        Hands = 'Geo. Mitaines +2',
+        Hands = 'Geo. Mitaines +3',
         Legs = 'Agwu\'s Slops',
         Feet = 'Herald\'s Gaiters',
     },
@@ -192,24 +192,24 @@ local sets = {
 		Waist = 'Gishdubar Sash',
     },
     Geomancy = { --900 skill, then indi duration, then CMP
-        Main = 'Idris',
+        Main = 'Gada',
         Range = 'Dunna',
-        Head = 'Agwu\'s Cap',--sir
+        Head = 'Azimuth Hood +1', --sir
         Neck = 'Bagua Charm',
-        Ear1 = 'Mendi. Earring',
-        Body = 'Telchine Chas.',
-        Hands = 'Geo. Mitaines +2',--15
-        Ring1 = 'Stikini Ring +1',--8
-        Ring2 = { Name = 'Metamor. Ring +1', AugPath='A' },
-        Waist = 'Hachirin-no-Obi',
-        Legs = 'Assid. Pants +1',
-        Feet = 'Medium\'s Sabots',
+        Ear1 = 'Malignance Earring',
+        Ear2 = 'Odnowa Earring',
+        Body = 'Bagua Tunic +1',
+        Hands = 'Geo. Mitaines +3',--15
+        Ring1 = 'Gelatinous Ring',--8
+        Ring2 = 'Murky Ring',
+        Waist = 'Shinjutsu-no-Obi',
+        Legs = 'Bagua Pants +1',
+        Feet = 'Azimuth Gaiters +1',
+        Back = 'Lifestream Cape',
     },
     Indi = {
-        Main = 'Solstice',
-        Back = 'Nantosuelta\'s Cape',
         Legs = 'Bagua Pants +1',
-        Feet = 'Azimuth Gaiters +2',
+        Feet = 'Azimuth Gaiters +1',
     },
 
     Enfeebling = {
@@ -351,7 +351,7 @@ local sets = {
 		Waist = 'Chaac Belt',
 	},
     Movement = {
-        Feet = 'Herald\'s Gaiters',
+        Feet = "Shneddick Ring",
 	},
 };
 profile.Sets = sets;

@@ -1,6 +1,6 @@
 Summary:
-Earned: 397 titles
-Unearned:693 titles
+Earned: 400 titles
+Unearned:690 titles
 Unverified: 0 titles
 
 Unearned Titles:
@@ -20,8 +20,6 @@ Unearned Titles:
 30: Dragon Asher
 31: Expeditionary Trooper
 39: Family Counselor
-45: Bean Cuisine Salter
-48: Pilgrim to Holla
 49: Pilgrim to Dem
 50: Pilgrim to Mea
 51: Daybreak Gambler
@@ -411,7 +409,6 @@ Unearned Titles:
 590: Friend of Lehko Habhoka
 591: Summa Cum Laude
 592: Grimoire Bearer
-593: Seasoning Connoisseur
 594: Fine Young Griffon
 595: Babban's Traveling Companion
 596: Fellow Fortifier
@@ -725,8 +722,10 @@ Earned Titles:
 42: Bond Fixer
 43: Vampire Hunter D-Minus
 44: Sheep's Milk Deliverer
+45: Bean Cuisine Salter
 46: Total Loser
 47: Doctor Shantotto's Flavor of the Month
+48: Pilgrim to Holla
 64: Lost Child Officer
 69: Knight in Training
 73: Arms Trader
@@ -871,6 +870,7 @@ Earned Titles:
 574: Torchbearer of the 7th Walk
 575: Torchbearer of the 8th Walk
 585: Assistant Detective
+593: Seasoning Connoisseur
 598: Traverser of Time
 599: Mythril Musketeer No. 6
 603: Flameserpent Facilitator

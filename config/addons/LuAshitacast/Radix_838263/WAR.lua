@@ -29,8 +29,6 @@ local sets = {
         Ring1 = 'Stikini Ring +1',
     },
     Town = {
-        Main = 'Naegling',
-        Sub = 'Blurred Shield +1',
         Ammo = { Name = 'Coiste Bodhar', AugPath='A' },
         Head = 'Hjarrandi Helm',
         Neck = 'Bathy Choker +1',
@@ -40,10 +38,10 @@ local sets = {
         Hands = 'Volte Moufles',
         Ring1 = "Shneddick Ring",
         Ring2 = 'Chirich Ring +1',
-        Back = { Name = 'Cichol\'s Mantle', Augment = { [1] = 'Accuracy+20', [2] = '"Dbl.Atk."+10', [3] = 'Attack+20', [4] = 'DEX+20' } },
+        Back = { Name = 'Cichol\'s Mantle', Augment = { [1] = 'Accuracy+20', [2] = '"Dbl.Atk."+10', [3] = 'Attack+20', [4] = 'DEX+30' } },
         Waist = { Name = 'Sailfi Belt +1', AugPath='A' },
         Legs = 'Sakpata\'s Cuisses',
-        Feet = 'Hermes\' Sandals',
+        Feet = 'Nyame Sollerets',
     },
 
     Dt = {
@@ -63,20 +61,19 @@ local sets = {
     },
 
     Tp_Default = {
-		Sub="Blurred Shield +1",
 		Ammo="Coiste Bodhar",
 		Head="Flam. Zucchetto +2",
 		Body="Boii Lorica +2",
 		Hands="Sakpata's Gauntlets",
-		Legs="Pumm. Cuisses +2",
-		Feet="Pumm. Calligae +2",
+		Legs="Pumm. Cuisses +3",
+		Feet="Pumm. Calligae +3",
 		Neck="Vim Torque +1",
 		Waist="Sailfi Belt +1",
-		Ear1="Boii Earring",
-		Ear2="Schere Earring",
+		Ear1="Schere Earring",
+		Ear2="Boii Earring",
 		Ring1="Flamma Ring",
 		Ring2="Chirich Ring +1",
-		Back="Cichol's Mantle",
+		Back={ Name = 'Cichol\'s Mantle', Augment = { [1] = 'Accuracy+20', [2] = '"Dbl.Atk."+10', [3] = 'Attack+20', [4] = 'DEX+30' } },
     },
     Tp_Hybrid = {
         Ammo = 'Staunch Tathlum',
@@ -152,19 +149,20 @@ local sets = {
     },
 
     Ws_Default = {
+        Sub = "Utu Grip",
         Ammo = 'Knobkierrie',
-        Head = { Name = 'Valorous Mask', Augment = { [1] = 'Attack+16', [2] = 'Weapon skill damage +10%', [3] = 'Accuracy+16', [4] = 'Pet: Mag. Acc.+1', [5] = 'Pet: STR+4' } },
-        Neck = 'Fotia Gorget',
+        Head = "Agoge Mask +3",
+        Neck= "War. Beads +1",
         Ear1 = 'Thrud Earring',
-        Ear2 = 'Schere Earring',
-        Body = 'Hjarrandi Breast.',
+        Ear2 = 'Moonshade Earring',
+        Body = "Pumm. Lorica +2",
         Hands = 'Boii Mufflers +2',
-        Ring1 = 'Beithir Ring',
-        Ring2 = 'Karieyh Ring +1',
+        Ring1= "Flamma Ring",
+		Ring2= "Rajas Ring",
         Back = { Name = 'Cichol\'s Mantle', Augment = { [1] = 'STR+20', [2] = 'Weapon skill damage +10%', [3] = 'Attack+20', [4] = 'Accuracy+20' } },
-        Waist = 'Fotia Belt',
-        Legs = 'Sakpata\'s Cuisses',
-        Feet = 'Valorous Greaves',
+        Waist = "Sailfi Belt +1",
+        Legs = "Boii Cuisses +2",
+		Feet = "Nyame Sollerets",
     },
     Ws_Hybrid = {
         Body = 'Hjarrandi Breast.',
@@ -182,7 +180,7 @@ local sets = {
         Hands = 'Nyame Gauntlets',
         Ring1 = 'Shiva Ring +1',
         Ring2 = 'Karieyh Ring +1',
-        Back = { Name = 'Cichol\'s Mantle', Augment = { [1] = 'STR+20', [2] = 'Weapon skill damage +10%', [3] = 'Attack+20', [4] = 'Accuracy+20' } },
+        Back = { Name = 'Cichol\'s Mantle', Augment = { [1] = 'STR+30', [2] = 'Weapon skill damage +10%', [3] = 'Attack+20', [4] = 'Accuracy+20' } },
         Waist = 'Eschan Stone',
         Legs = 'Nyame Flanchard',
         Feet = 'Nyame Sollerets',
@@ -205,7 +203,7 @@ local sets = {
 		Ear2={ Name="Moonshade Earring", Augment={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
 		Ring1="Flamma Ring",
 		Ring2="Rajas Ring",
-		Back="Cichol\'s Mantle",
+		Back={ Name = 'Cichol\'s Mantle', Augment = { [1] = 'STR+20', [2] = 'Weapon skill damage +10%', [3] = 'Attack+20', [4] = 'Accuracy+20' } },
     },
     Savage_Hybrid = {
     },
@@ -235,7 +233,7 @@ local sets = {
         Ammo = 'Thr. Tomahawk',
 	},
     Warcry = {
-        Head = 'Agoge Mask +2',
+        Head = 'Agoge Mask +3',
 	},
     Aggressor = {
         Head = 'Pumm. Mask +1',
@@ -245,11 +243,11 @@ local sets = {
         Hands = 'Agoge Mufflers +1',
 	},
     Berserk = {
-        Body = 'Pumm. Lorica +1',
+        Body = 'Pumm. Lorica +2',
         Feet = 'Agoge Calligae +1',
 	},
     BloodRage = {
-        Body = 'Boii Lorica +1',
+        Body = 'Boii Lorica +2',
 	},
 
     TH = {
@@ -257,7 +255,6 @@ local sets = {
 		Waist = 'Chaac Belt',
 	},
     Movement = {
-        Feet = 'Hermes\' Sandals',
         Ring2="Shneddick Ring"
 	},
 };

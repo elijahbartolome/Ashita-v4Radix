@@ -134,7 +134,6 @@ do
                 if (is_valid_key(k)) then
                     -- Prepare the key..
                     local key = '[' + serialize_key(k) + ']';
-
                     -- Process valid non-table values..
                     switch(type(v), {
                         ['boolean'] = function ()

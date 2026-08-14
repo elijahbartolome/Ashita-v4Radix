@@ -21,6 +21,23 @@ return T{
         ShowSkillchainAnimation = true,
         ShowHotkey              = false,
     },
+    ["LTRT:3"] = {
+        ActionType              = 'Command',
+        Macro                   = T{
+            "/mount Fenrir",
+        },
+        Label                   = "Fenrir mount",
+        Image                   = "misc/command.png",
+        ShowCost                = true,
+        ShowCross               = true,
+        ShowFade                = true,
+        ShowRecast              = true,
+        ShowName                = true,
+        ShowTrigger             = true,
+        ShowSkillchainIcon      = true,
+        ShowSkillchainAnimation = true,
+        ShowHotkey              = false,
+    },
     ["LTRT:8"] = {
         ActionType              = 'Trust',
         Id                      = 993,

@@ -45,6 +45,8 @@
 /addon load statustimers
 /addon load tCrossBar
 /addon load titlecheck
+/addon load cleanup
+/addon load XIUI
 
 ##########################################################################
 #

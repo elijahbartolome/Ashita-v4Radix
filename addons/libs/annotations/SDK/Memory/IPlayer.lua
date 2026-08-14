@@ -538,7 +538,7 @@ function IPlayer:GetCombatSkill(index) end
 ---Returns the players requested craft skill.
 ---@param self IPlayer
 ---@param index number
----@return craftskills_t
+---@return craftskill_t
 ---@nodiscard
 function IPlayer:GetCraftSkill(index) end
 
